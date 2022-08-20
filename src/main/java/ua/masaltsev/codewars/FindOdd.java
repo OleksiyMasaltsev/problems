@@ -17,6 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FindOdd {
+
     public static int findIt(int[] a) {
 
         Map<Integer, Integer> numberMap = new HashMap<>();
@@ -39,6 +40,16 @@ public class FindOdd {
 
         return result;
     }
+
+//    public static int findIt(int[] A) {
+//
+//        int result = 0;
+//        for (int j : A) {
+//            result = result ^ j;
+//        }
+//        return result;
+//    }
+
 }
 
 
