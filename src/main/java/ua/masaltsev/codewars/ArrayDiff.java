@@ -9,24 +9,19 @@
  * Kata.arrayDiff(new int[] {1, 2, 2, 2, 3}, new int[] {2}) => new int[] {1, 3}
  */
 
-package ua.masaltsev.codewars.unsolved;
+package ua.masaltsev.codewars;
 
 import java.util.Arrays;
-import java.util.PrimitiveIterator;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class ArrayDiff {
     public static int[] arrayDiff(int[] a, int[] b) {
 
         IntStream intStreamA = Arrays.stream(a);
-        IntStream intStreamB = Arrays.stream(b);
 
-//        PrimitiveIterator.OfInt iteratorB = intStreamB.distinct().iterator();
-
-        intStreamB.forEach(j -> {
-            intStreamA.distinct().filter(i -> i != j);
-        });
+        for (int j : b) {
+            intStreamA = intStreamA.filter(i -> i != j);
+        }
 
         return intStreamA.toArray();
     }
