@@ -1,9 +1,8 @@
 package ua.masaltsev.leetcode.unsolved;
 
 import org.junit.jupiter.api.Test;
-import ua.masaltsev.leetcode.unsolved.ArrayEleven;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class ArrayElevenTest {
 
