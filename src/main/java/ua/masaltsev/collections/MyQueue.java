@@ -36,14 +36,16 @@ public class MyQueue<T> {
     private void increaseLength() {
         Object[] tempStorage = new Object[storage.length + 5];
         copyStorage(tempStorage);
-        System.out.println("size after increase " + storage.length);
+//        System.out.println("size after increase " + storage.length);
+
     }
 
     private void decreaseLength() {
         Object[] tempStorage = new Object[storage.length - 5];
         copyStorage(tempStorage);
         popCounter = 0;
-        System.out.println("size after decrease " + storage.length);
+//        System.out.println("size after decrease " + storage.length);
+
     }
 
     private void copyStorage(Object[] tempStorage) {
