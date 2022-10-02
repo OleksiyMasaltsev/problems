@@ -27,10 +27,7 @@
 
 package ua.masaltsev.leetcode.arrays;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Intersection {
     public int[] intersect(int[] nums1, int[] nums2) {
@@ -52,4 +49,30 @@ public class Intersection {
         }
         return resultArray;
     }
+
+//    public int[] intersect(int[] nums1, int[] nums2) {
+//        Arrays.sort(nums1);
+//        Arrays.sort(nums2);
+//
+//        int i = 0, j = 0;
+//        List<Integer> list = new ArrayList<>();
+//
+//        while (i < nums1.length && j < nums2.length) {
+//            int a = nums1[i], b = nums2[j];
+//            if (a == b) {
+//                list.add(a);
+//                i++;
+//                j++;
+//            } else if (a < b) {
+//                i++;
+//            } else {
+//                j++;
+//            }
+//        }
+//
+//        int[] ret = new int[list.size()];
+//        for (int k = 0; k < list.size(); k++) ret[k] = list.get(k);
+//
+//        return ret;
+//    }
 }
