@@ -27,7 +27,7 @@
  * this visualization help me figure it out :)
  */
 
-package ua.masaltsev.leetcode;
+package ua.masaltsev.leetcode.arrays;
 
 public class ArrayThree {
     public void rotate(int[] nums, int k) {

@@ -1,6 +1,7 @@
-package ua.masaltsev.leetcode;
+package ua.masaltsev.leetcode.arrays;
 
 import org.junit.jupiter.api.Test;
+import ua.masaltsev.leetcode.arrays.ArrayFour;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

@@ -27,7 +27,7 @@
  * Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
  */
 
-package ua.masaltsev.leetcode;
+package ua.masaltsev.leetcode.arrays;
 
 public class ArrayTwo {
     public int maxProfit(int[] prices) {
