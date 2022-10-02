@@ -27,14 +27,29 @@
 
 package ua.masaltsev.leetcode.arrays;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Intersection {
     public int[] intersect(int[] nums1, int[] nums2) {
-
-        Arrays.sort(nums1);
-        Arrays.sort(nums2);
-
-        return null;
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i : nums1) {
+            int counter = map.getOrDefault(i, 0);
+            map.put(i, counter + 1);
+        }
+        List<Integer> list = new ArrayList<>();
+        for (int i : nums2) {
+            if (map.get(i) != null && map.get(i) > 0) {
+                list.add(i);
+                map.put(i, map.get(i) - 1);
+            }
+        }
+        int[] resultArray = new int[list.size()];
+        for (int i = 0; i < resultArray.length; i++) {
+            resultArray[i] = list.get(i);
+        }
+        return resultArray;
     }
 }
