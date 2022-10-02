@@ -17,7 +17,7 @@
  * Output: 1
  */
 
-package ua.masaltsev.leetcode;
+package ua.masaltsev.leetcode.arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;

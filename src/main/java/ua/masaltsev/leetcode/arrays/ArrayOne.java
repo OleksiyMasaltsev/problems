@@ -1,4 +1,4 @@
-package ua.masaltsev.leetcode;
+package ua.masaltsev.leetcode.arrays;
 
 public class ArrayOne {
     public int removeDuplicates(int[] nums) {
