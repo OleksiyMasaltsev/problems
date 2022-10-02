@@ -69,4 +69,3 @@ public class ArrayThree {
 
         System.arraycopy(resultArray, 0, nums, 0, nums.length);
     }*/
-
